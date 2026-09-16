@@ -1,0 +1,16 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "practice2_library_catalogue",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.13.3",
+  "flutterRoot": "file:///D:/kbtu/7%20semester/mobile%20application%20development%20with%20flutter%201/important/flutter",
+  "flutterVersion": "3.47.3",
+  "pubCache": "file:///C:/Users/user/AppData/Local/Pub/Cache"
+}

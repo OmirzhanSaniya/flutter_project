@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "practice2_library_catalogue"
+  ],
+  "packages": [
+    {
+      "name": "practice2_library_catalogue",
+      "version": "1.0.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}
