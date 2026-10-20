@@ -1,17 +1,24 @@
-# lab1_campus_events
+# Campus Events
 
-A new Flutter project.
+Flutter I, Lab 1 ("Your App"). Domain: **campus events** - browse, search and
+filter events, register for them, create and edit your own, switch theme.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+Added three screenshots:
 
-A few resources to get you started if this is your first Flutter project:
+- light theme
+- dark theme
+- tablet 
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Decisions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The list of events and the profile live in the State of the shell, so every tab
+reads the same data and changes it only through callbacks. The theme mode lives
+in MyApp above MaterialApp, because the theme must be rebuilt for the whole app.
+I used one Navigator with named routes: the shell is in `routes:`, while detail
+and form are built in onGenerateRoute from typed argument classes. The form
+returns the new Event through pop, and the caller checks null and mounted before
+setState. The list switches to a grid with LayoutBuilder, because it needs the
+width the parent gives, not the width of the screen. Colours come only from
+ColorScheme and text sizes only from textTheme, so dark mode works by itself.
